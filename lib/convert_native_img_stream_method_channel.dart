@@ -22,7 +22,6 @@ class MethodChannelConvertNativeImgStream extends ConvertNativeImgStreamPlatform
       Uint8List imgBytes,
       int width,
       int height,
-      int quality
     ) async {
     if(Platform.isIOS) {
       throw UnimplementedError('convert(*) has not been implemented for iOS');
@@ -31,7 +30,6 @@ class MethodChannelConvertNativeImgStream extends ConvertNativeImgStreamPlatform
       "bytes": imgBytes,
       "width": width,
       "height": height,
-      "quality": quality
     });
     return result;
   }

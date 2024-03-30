@@ -42,11 +42,12 @@ class ConvertNativeImgStreamPlugin: FlutterPlugin, MethodCallHandler {
     val bytes: ByteArray? = arg?.get("bytes") as? ByteArray
     val width: Int? = arg?.get("width") as? Int
     val height: Int? = arg?.get("height") as? Int
-    val quality: Int = arg?.get("quality") as? Int ?: 100
+
+    var quality: Int = 100 
 
     if(bytes == null || width == null || height == null) {
       result.error("Null argument", "bytes, width, height must not be null", null)
-      return
+      retu
     }
 
     Thread {

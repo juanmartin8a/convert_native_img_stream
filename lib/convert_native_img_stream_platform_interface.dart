@@ -32,7 +32,6 @@ abstract class ConvertNativeImgStreamPlatform extends PlatformInterface {
       Uint8List imgBytes,
       int width,
       int height,
-      int quality
   ) {
     throw UnimplementedError('convert(*) has not been implemented.');
   }

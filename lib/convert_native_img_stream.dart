@@ -45,7 +45,7 @@ class ConvertNativeImgStream {
     Uint8List? jpegData = imgBytes;
     if (Platform.isAndroid) {
       jpegData = await ConvertNativeImgStreamPlatform.instance.convert(
-          imgBytes, width, height, quality
+          imgBytes, width, height 
       );
     }
     return compute((List<dynamic> params) async {
