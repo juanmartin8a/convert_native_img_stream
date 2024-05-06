@@ -47,7 +47,7 @@ class ConvertNativeImgStreamPlugin: FlutterPlugin, MethodCallHandler {
 
     if(bytes == null || width == null || height == null) {
       result.error("Null argument", "bytes, width, height must not be null", null)
-      retu
+      return
     }
 
     Thread {
